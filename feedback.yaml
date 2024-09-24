@@ -1,0 +1,309 @@
+openapi: 3.0.3
+info:
+  title: Самокат. Сервис отзывов ("Feedback") - OpenAPI 3.0
+  description: |-
+    Описание API для сервиса отзывов в приложении Самокат
+  version: 1.0.11
+tags:
+  - name: feedback
+    description: Работа с отзывом на продукт
+paths:
+  /feedback-list:
+    get:
+      tags:
+        - feedback
+      summary: Получение списка отзывов
+      description: Получение списка отзывов, с возможностью указания фильтрации
+      operationId: feedbackListGet
+      parameters:
+        - name: product_id
+          in: query
+          description: Id of the product to get
+          required: true
+          schema:
+            type: integer
+            format: int64
+        - name: sort_param
+          in: query
+          description: Параметр сортировки
+          schema:
+            type: string
+            enum: [rating, date]
+        - name: sort_order
+          in: query
+          description: Направление сортировки
+          schema:
+            type: string
+            enum: [ASC, DESC]
+        - name: page
+          in: query
+          description: Пагинация для списка отзывов
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FeedbackList'
+        '400':
+          description: Ошибка в запросе
+        '500':
+          description: Ошибка при обработке запроса на стороне сервера
+  /feedback/{feedback_id}:
+    get:
+      tags:
+        - feedback
+      summary: Получение отзыва пользователя
+      description: Получение отзыва, который пользователь оставил на товар
+      operationId: feedbackUser
+      parameters:
+        - name: feedback_id
+          in: path
+          description: Id of the feedback to get
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FeedbackGet'
+        '400':
+          description: Ошибка в запросе
+        '500':
+          description: Ошибка при обработке запроса на стороне сервера
+    delete:
+      tags:
+        - feedback
+      summary: Удаление отзыва
+      description: Удаление ранее оставленного отзыва
+      operationId: feedbackDelete
+      parameters:
+        - name: feedback_id
+          in: path
+          description: Id of the feedback to delete
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: Successful operation
+        '400':
+          description: Ошибка в запросе
+        '500':
+          description: Ошибка при обработке запроса на стороне сервера
+  /feedback/get-rating:
+    get:
+      tags:
+        - feedback
+      summary: Получение рейтинга товара
+      description: Получение рейтинга товара - средней оценки и кол-ва отзывов
+      operationId: feedbackGetRating
+      parameters:
+        - name: product_id
+          in: query
+          description: Id товара
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FeedbackRatingGet'
+        '400':
+          description: Ошибка в запросе
+        '500':
+          description: Ошибка при обработке запроса на стороне сервера
+  /feedback:
+    post:
+      tags:
+        - feedback
+      summary: Создание отзыва
+      description: Создание нового отзыва
+      operationId: feedbackPost
+      requestBody:
+        content:
+          application/json:  
+            schema:
+              $ref: '#/components/schemas/FeedbackCreate'
+        required: true
+      responses:
+        '200':
+          description: Successful operation
+        '400':
+          description: Ошибка в запросе
+        '500':
+          description: Ошибка при обработке запроса на стороне сервера
+    put:
+      tags:
+        - feedback 
+      summary: Редактирование отзыва
+      description: Редактирование ранее оставленного отзыва
+      operationId: feedbackPut
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FeedbackEdit'
+        required: true
+      responses:
+        '200':
+          description: Successful operation
+        '400':
+          description: Ошибка в запросе
+        '500':
+          description: Ошибка при обработке запроса на стороне сервера
+  /feedback-attachments:
+    post:
+      tags:
+        - feedback
+      summary: Отправка вложений в отзыве
+      description: Отправка вложений - фото или видео - в отзыве на товар
+      operationId: feedbackAttachments
+      requestBody:
+        content:
+          multipart/form-data:  
+            schema:
+              type: object
+              properties:
+                files: 
+                  type: array
+                  items: 
+                    type: string
+                    format: binary
+                  nullable: true
+      responses:
+        '200':
+          description: Successful operation
+        '400':
+          description: Ошибка в запросе
+        '500':
+          description: Ошибка при обработке запроса на стороне сервера
+  /feedback/attachment/{type}/{attachment_id}:
+    get:
+      tags: 
+        - feedback
+      summary: Получение вложения отзыва
+      description: Получение вложения отзыва
+      operationId: feedbackAttachmentForId
+      parameters:
+        - name: type
+          in: path
+          description: Тип вложения
+          required: true
+          schema:
+            type: string
+            enum: [photo, video]
+        - name: attachment_id
+          in: path
+          description: ID вложения
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            multipart/form-data:
+              schema:
+                type: string
+                format: binary
+        '400':
+          description: Ошибка в запросе
+        '500':
+          description: Ошибка при обработке запроса на стороне сервера
+components:
+  schemas:
+    FeedbackList:
+      type: array
+      items:
+        $ref: '#/components/schemas/FeedbackGet'
+    FeedbackGet:
+      type: object
+      properties:
+        user_name:
+          type: string
+          example: Иван В.
+        product_id:
+          type: integer
+          format: int64
+          example: 217436
+        score:
+          type: integer
+          example: 4
+        comment:
+          type: string
+          example: Мне все понравилось!
+        anonimous:
+          type: boolean
+        attachments:
+          type: array
+          items:
+            $ref: '#/components/schemas/AttachmentGet'  
+    FeedbackCreate:
+      type: object
+      properties:
+        product_id:
+          type: integer
+          format: int64
+          example: 123689696
+        score:
+          type: integer
+          example: 5
+        comment:
+          type: string
+          example: Отличный продукт, буду брать еще!
+        anonymous:
+          type: boolean
+    AttachmentGet: 
+      type: object
+      properties:
+        uuid_file:
+          type: string
+          example: u123sdr7534g
+        file_name:
+          type: string
+          example: Пользовательский_файл
+        file_icon:
+          type: string
+          example: file_icon_in_base64
+        file_mimetype:
+          type: string
+          enum: [photo, video]
+        file_url:
+          type: string
+          example: /feedback/attachment/photo/12345678
+    FeedbackEdit:
+      type: object
+      properties:
+        feedback_id:
+          type: integer
+          format: int64
+          example: 456128
+        score:
+          type: integer
+          example: 4
+        comment:
+          type: string
+          example: Спустя месяц использования качество не радует
+        anonimus:
+          type: boolean
+    FeedbackRatingGet:
+      type: object
+      properties:
+        rating_avg:
+          type: number
+          example: 3.6
+        rating_count:
+          type: number
+          example: 45

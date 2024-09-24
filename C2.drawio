@@ -1,0 +1,159 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0" version="24.7.14">
+  <diagram id="-5t1ZUr97IkeJ8Yv1GZE" name="Страница — 1">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <object placeholders="1" c4Type="Relationship" c4Technology="REST API" c4Description="Получение продуктов" label="&lt;div style=&quot;text-align: left&quot;&gt;&lt;div style=&quot;text-align: center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center&quot;&gt;[%c4Technology%]&lt;/div&gt;&lt;/div&gt;" id="FDDX-NDDX38mi1T4WzUE-5">
+          <mxCell style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;labelBackgroundColor=none;labelBorderColor=none;fontFamily=Open Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DOpen%2BSans;shape=connector;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="hSGpxxj7y5QxquchO7KA-1" target="m5jGgpk4AVA-0VAhvVSC-1">
+            <mxGeometry x="-0.152" y="-2" width="240" relative="1" as="geometry">
+              <mxPoint x="1330" y="-717" as="sourcePoint" />
+              <mxPoint x="730" y="-710" as="targetPoint" />
+              <mxPoint as="offset" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="api-gateway" c4Container="Container " c4Technology="Kotlin, SpringBoot" c4Description="API Gateway" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Type%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;b&gt;[%c4Container%:&amp;nbsp;%c4Technology%]&lt;/b&gt;&lt;/div&gt;&lt;b&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;&lt;/b&gt;" id="hSGpxxj7y5QxquchO7KA-1">
+          <mxCell style="shape=hexagon;size=50;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;labelBackgroundColor=none;fillColor=#23A2D9;fontSize=12;fontColor=#ffffff;align=center;strokeColor=#0E7DAD;metaEdit=1;points=[[0,0.5,0,0,0],[0.12,0.25,0,0,0],[0.13,0.75,0,0,0],[0.25,0,0,0,0],[0.25,1,0,0,0],[0.5,0,0,0,0],[0.5,1,0,0,0],[0.75,0,0,0,0],[0.75,1,0,0,0],[0.88,0.25,0,0,0],[0.88,0.75,0,0,0],[1,0.5,0,0,0]];resizable=0;fontFamily=Open Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DOpen%2BSans;" vertex="1" parent="1">
+            <mxGeometry x="1310" y="-760" width="200" height="170" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="app" c4Container="Container " c4Technology="React Native" c4Description="Моб. приложение" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Type%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;b&gt;[%c4Container%:&amp;nbsp;%c4Technology%]&lt;/b&gt;&lt;/div&gt;&lt;b&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;&lt;/b&gt;" id="hSGpxxj7y5QxquchO7KA-2">
+          <mxCell style="shape=hexagon;size=50;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;labelBackgroundColor=none;fillColor=#23A2D9;fontSize=12;fontColor=#ffffff;align=center;strokeColor=#0E7DAD;metaEdit=1;points=[[0.5,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.5,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];resizable=0;fontFamily=Open Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DOpen%2BSans;" vertex="1" parent="1">
+            <mxGeometry x="1310" y="-1040" width="200" height="170" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Technology="REST API" c4Description="- Авторизация / аутентификация&#xa;- Базовый профиль&#xa;- Контент&#xa;- Заказ&#xa;- Отзыв" label="&lt;div style=&quot;text-align: left&quot;&gt;&lt;div style=&quot;text-align: center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center&quot;&gt;[%c4Technology%]&lt;/div&gt;&lt;/div&gt;" id="hSGpxxj7y5QxquchO7KA-4">
+          <mxCell style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;labelBackgroundColor=none;labelBorderColor=none;fontFamily=Open Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DOpen%2BSans;shape=connector;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="hSGpxxj7y5QxquchO7KA-2" target="hSGpxxj7y5QxquchO7KA-1">
+            <mxGeometry x="-0.25" width="240" relative="1" as="geometry">
+              <mxPoint x="1170" y="-954" as="sourcePoint" />
+              <mxPoint x="1240" y="-550" as="targetPoint" />
+              <mxPoint as="offset" />
+              <Array as="points">
+                <mxPoint x="1410" y="-830" />
+                <mxPoint x="1410" y="-830" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="auth" c4Container="Container " c4Technology="Kotlin, SpringBoot" c4Description="Сервис авторизации" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;span&gt;%c4Type%&lt;/span&gt;&lt;/font&gt;&lt;div&gt;&lt;span&gt;[%c4Container%:&amp;nbsp;%c4Technology%]&lt;/span&gt;&lt;/div&gt;&lt;span&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;&lt;/span&gt;" id="hSGpxxj7y5QxquchO7KA-5">
+          <mxCell style="shape=hexagon;size=50;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;labelBackgroundColor=none;fillColor=#23A2D9;fontSize=12;fontColor=#ffffff;align=center;strokeColor=#0E7DAD;metaEdit=1;points=[[0.5,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.5,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];resizable=0;fontFamily=Open Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DOpen%2BSans;fontStyle=0" vertex="1" parent="1">
+            <mxGeometry x="1840" y="-760" width="200" height="170" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Technology="REST API" c4Description="Получение и обновление токена" label="&lt;div style=&quot;text-align: left&quot;&gt;&lt;div style=&quot;text-align: center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center&quot;&gt;[%c4Technology%]&lt;/div&gt;&lt;/div&gt;" id="hSGpxxj7y5QxquchO7KA-14">
+          <mxCell style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;labelBackgroundColor=none;labelBorderColor=none;fontFamily=Open Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DOpen%2BSans;shape=connector;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="hSGpxxj7y5QxquchO7KA-1" target="hSGpxxj7y5QxquchO7KA-5">
+            <mxGeometry x="-0.0647" y="1" width="240" relative="1" as="geometry">
+              <mxPoint x="1660" y="-680" as="sourcePoint" />
+              <mxPoint x="1710" y="-770" as="targetPoint" />
+              <mxPoint as="offset" />
+              <Array as="points">
+                <mxPoint x="1620" y="-675" />
+                <mxPoint x="1620" y="-675" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="product" c4Container="Container " c4Technology="Kotlin, SpringBoot" c4Description="Сервис продуктов" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Type%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;b&gt;[%c4Container%:&amp;nbsp;%c4Technology%]&lt;/b&gt;&lt;/div&gt;&lt;b&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;&lt;/b&gt;" id="m5jGgpk4AVA-0VAhvVSC-1">
+          <mxCell style="shape=hexagon;size=50;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;labelBackgroundColor=none;fillColor=#23A2D9;fontSize=12;fontColor=#ffffff;align=center;strokeColor=#0E7DAD;metaEdit=1;points=[[0,0.5,0,0,0],[0.12,0.25,0,0,0],[0.13,0.75,0,0,0],[0.25,0,0,0,0],[0.25,1,0,0,0],[0.5,0,0,0,0],[0.5,1,0,0,0],[0.75,0,0,0,0],[0.75,1,0,0,0],[0.88,0.25,0,0,0],[0.88,0.75,0,0,0],[1,0.5,0,0,0]];resizable=0;fontFamily=Open Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DOpen%2BSans;" vertex="1" parent="1">
+            <mxGeometry x="860" y="-760" width="200" height="170" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="catalog" c4Container="Container " c4Technology="Kotlin, SpringBoot" c4Description="Сервис иерархии&#xa;и категоризации продуктов" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Type%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;b&gt;[%c4Container%:&amp;nbsp;%c4Technology%]&lt;/b&gt;&lt;/div&gt;&lt;b&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;&lt;/b&gt;" id="m5jGgpk4AVA-0VAhvVSC-3">
+          <mxCell style="shape=hexagon;size=50;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;labelBackgroundColor=none;fillColor=#23A2D9;fontSize=12;fontColor=#ffffff;align=center;strokeColor=#0E7DAD;metaEdit=1;points=[[0,0.5,0,0,0],[0.12,0.25,0,0,0],[0.13,0.75,0,0,0],[0.25,0,0,0,0],[0.25,1,0,0,0],[0.5,0,0,0,0],[0.5,1,0,0,0],[0.75,0,0,0,0],[0.75,1,0,0,0],[0.88,0.25,0,0,0],[0.88,0.75,0,0,0],[1,0.5,0,0,0]];resizable=0;fontFamily=Open Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DOpen%2BSans;" vertex="1" parent="1">
+            <mxGeometry x="1090" y="-530" width="200" height="170" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Technology="REST API" c4Description="Получение иерархии" label="&lt;div style=&quot;text-align: left&quot;&gt;&lt;div style=&quot;text-align: center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center&quot;&gt;[%c4Technology%]&lt;/div&gt;&lt;/div&gt;" id="m5jGgpk4AVA-0VAhvVSC-4">
+          <mxCell style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;labelBackgroundColor=none;labelBorderColor=none;fontFamily=Open Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DOpen%2BSans;shape=connector;exitX=0.13;exitY=0.75;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="hSGpxxj7y5QxquchO7KA-1" target="m5jGgpk4AVA-0VAhvVSC-3">
+            <mxGeometry x="-0.037" width="240" relative="1" as="geometry">
+              <mxPoint x="1093" y="-624" as="sourcePoint" />
+              <mxPoint x="1080" y="-360" as="targetPoint" />
+              <mxPoint as="offset" />
+              <Array as="points">
+                <mxPoint x="1190" y="-632" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="profile" c4Container="Container " c4Technology="Kotlin, SpringBoot" c4Description="Сервис клиентских&#xa;данных" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;span&gt;%c4Type%&lt;/span&gt;&lt;/font&gt;&lt;div&gt;&lt;span&gt;[%c4Container%:&amp;nbsp;%c4Technology%]&lt;/span&gt;&lt;/div&gt;&lt;span&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;&lt;/span&gt;" id="m5jGgpk4AVA-0VAhvVSC-5">
+          <mxCell style="shape=hexagon;size=50;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;labelBackgroundColor=none;fillColor=#23A2D9;fontSize=12;fontColor=#ffffff;align=center;strokeColor=#0E7DAD;metaEdit=1;points=[[0.5,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.5,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];resizable=0;fontFamily=Open Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DOpen%2BSans;fontStyle=0" vertex="1" parent="1">
+            <mxGeometry x="1430" y="-530" width="200" height="170" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Technology="REST API" c4Description="Получение и управление профилем" label="&lt;div style=&quot;text-align: left&quot;&gt;&lt;div style=&quot;text-align: center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center&quot;&gt;[%c4Technology%]&lt;/div&gt;&lt;/div&gt;" id="m5jGgpk4AVA-0VAhvVSC-6">
+          <mxCell style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;labelBackgroundColor=none;labelBorderColor=none;fontFamily=Open Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DOpen%2BSans;shape=connector;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="hSGpxxj7y5QxquchO7KA-1" target="m5jGgpk4AVA-0VAhvVSC-5">
+            <mxGeometry x="-0.037" width="240" relative="1" as="geometry">
+              <mxPoint x="1370" y="-580" as="sourcePoint" />
+              <mxPoint x="1560" y="-490" as="targetPoint" />
+              <mxPoint as="offset" />
+              <Array as="points">
+                <mxPoint x="1460" y="-560" />
+                <mxPoint x="1470" y="-560" />
+                <mxPoint x="1470" y="-530" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="order" c4Container="Container " c4Technology="Kotlin, SpringBoot" c4Description="Сервис заказов" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;span&gt;%c4Type%&lt;/span&gt;&lt;/font&gt;&lt;div&gt;&lt;span&gt;[%c4Container%:&amp;nbsp;%c4Technology%]&lt;/span&gt;&lt;/div&gt;&lt;span&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;&lt;/span&gt;" id="m5jGgpk4AVA-0VAhvVSC-7">
+          <mxCell style="shape=hexagon;size=50;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;labelBackgroundColor=none;fillColor=#23A2D9;fontSize=12;fontColor=#ffffff;align=center;strokeColor=#0E7DAD;metaEdit=1;points=[[0,0.5,0,0,0],[0.12,0.25,0,0,0],[0.12,0.75,0,0,0],[0.25,0,0,0,0],[0.25,1,0,0,0],[0.5,0,0,0,0],[0.5,1,0,0,0],[0.75,0,0,0,0],[0.75,1,0,0,0],[0.88,0.75,0,0,0],[0.89,0.25,0,0,0],[1,0.5,0,0,0]];resizable=0;fontFamily=Open Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DOpen%2BSans;fontStyle=0" vertex="1" parent="1">
+            <mxGeometry x="1690" y="-530" width="200" height="170" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Technology="REST API" c4Description="Получение заказов&#xa;Управление заказами" label="&lt;div style=&quot;text-align: left&quot;&gt;&lt;div style=&quot;text-align: center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center&quot;&gt;[%c4Technology%]&lt;/div&gt;&lt;/div&gt;" id="m5jGgpk4AVA-0VAhvVSC-11">
+          <mxCell style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=0.88;exitY=0.75;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;align=center;verticalAlign=middle;fontFamily=Open Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DOpen%2BSans;labelBorderColor=none;labelBackgroundColor=none;" edge="1" parent="1" source="hSGpxxj7y5QxquchO7KA-1" target="m5jGgpk4AVA-0VAhvVSC-7">
+            <mxGeometry width="240" relative="1" as="geometry">
+              <mxPoint x="1550" y="-560" as="sourcePoint" />
+              <mxPoint x="1790" y="-560" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="feedback" c4Container="Container " c4Technology="Kotlin, SpringBoot" c4Description="Сервис отзывов" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;span&gt;%c4Type%&lt;/span&gt;&lt;/font&gt;&lt;div&gt;&lt;span&gt;[%c4Container%:&amp;nbsp;%c4Technology%]&lt;/span&gt;&lt;/div&gt;&lt;span&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;&lt;/span&gt;" id="m5jGgpk4AVA-0VAhvVSC-12">
+          <mxCell style="shape=hexagon;size=50;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;labelBackgroundColor=none;fillColor=#23A2D9;fontSize=12;fontColor=#ffffff;align=center;strokeColor=#0eaf46;metaEdit=1;points=[[0.5,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.5,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];resizable=0;fontFamily=Open Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DOpen%2BSans;fontStyle=0;strokeWidth=5;" vertex="1" parent="1">
+            <mxGeometry x="1200" y="-280" width="200" height="170" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Technology="Kafka" c4Description="[consume]&#xa;Дообогащение&#xa;продукта категорией" label="&lt;div style=&quot;text-align: left&quot;&gt;&lt;div style=&quot;text-align: center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center&quot;&gt;[%c4Technology%]&lt;/div&gt;&lt;/div&gt;" id="m5jGgpk4AVA-0VAhvVSC-14">
+          <mxCell style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;labelBackgroundColor=none;labelBorderColor=none;fontFamily=Open Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DOpen%2BSans;shape=connector;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="m5jGgpk4AVA-0VAhvVSC-1" target="m5jGgpk4AVA-0VAhvVSC-3">
+            <mxGeometry x="-0.1999" width="240" relative="1" as="geometry">
+              <mxPoint x="990" y="-440" as="sourcePoint" />
+              <mxPoint x="1112" y="-203" as="targetPoint" />
+              <mxPoint as="offset" />
+              <Array as="points">
+                <mxPoint x="960" y="-445" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Technology="REST API" c4Description="Получение, управление и удаление отзывов" label="&lt;div style=&quot;text-align: left&quot;&gt;&lt;div style=&quot;text-align: center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center&quot;&gt;[%c4Technology%]&lt;/div&gt;&lt;/div&gt;" id="JIlyPNwijEK8Dcm1gejB-4">
+          <mxCell style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;labelBackgroundColor=none;labelBorderColor=none;fontFamily=Open Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DOpen%2BSans;shape=connector;exitX=0.294;exitY=0.98;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="hSGpxxj7y5QxquchO7KA-1" target="m5jGgpk4AVA-0VAhvVSC-12">
+            <mxGeometry x="0.7384" width="240" relative="1" as="geometry">
+              <mxPoint x="1790" y="-320" as="sourcePoint" />
+              <mxPoint x="1510" y="-159.93000000000006" as="targetPoint" />
+              <mxPoint as="offset" />
+              <Array as="points">
+                <mxPoint x="1369" y="-560" />
+                <mxPoint x="1300" y="-560" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="ngenix" c4Container="Container " c4Technology="Kotlin, SpringBoot" c4Description="Облачный сервис" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;span&gt;%c4Type%&lt;/span&gt;&lt;/font&gt;&lt;div&gt;&lt;span&gt;[%c4Container%:&amp;nbsp;%c4Technology%]&lt;/span&gt;&lt;/div&gt;&lt;span&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;&lt;/span&gt;" id="RhvK2ADDBJpFufxUoBk4-1">
+          <mxCell style="shape=hexagon;size=50;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;labelBackgroundColor=none;fillColor=#23A2D9;fontSize=12;fontColor=#ffffff;align=center;strokeColor=#0eaf46;metaEdit=1;points=[[0.5,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.5,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];resizable=0;fontFamily=Open Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DOpen%2BSans;fontStyle=0;strokeWidth=5;" vertex="1" parent="1">
+            <mxGeometry x="1654" y="-280" width="200" height="170" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Technology="REST API" c4Description="Получение и удаление видео" label="&lt;div style=&quot;text-align: left&quot;&gt;&lt;div style=&quot;text-align: center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center&quot;&gt;[%c4Technology%]&lt;/div&gt;&lt;/div&gt;" id="RhvK2ADDBJpFufxUoBk4-3">
+          <mxCell style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;labelBackgroundColor=none;labelBorderColor=none;fontFamily=Open Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DOpen%2BSans;shape=connector;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="m5jGgpk4AVA-0VAhvVSC-12" target="RhvK2ADDBJpFufxUoBk4-1">
+            <mxGeometry x="-0.252" width="240" relative="1" as="geometry">
+              <mxPoint x="1400" y="-195" as="sourcePoint" />
+              <mxPoint x="1420" y="-750" as="targetPoint" />
+              <mxPoint as="offset" />
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
